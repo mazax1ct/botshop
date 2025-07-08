@@ -1,0 +1,27 @@
+.search-form {
+    position: relative;
+    z-index: 1;
+
+    .input {
+        padding-left: 56px;
+    }
+
+    &__submit {
+        @include button-reset;
+        align-items: center;
+        display: flex;
+        height: 54px;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 54px;
+        z-index: 1;
+
+        svg {
+            fill: var(--color-7);
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

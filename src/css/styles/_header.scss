@@ -1,0 +1,40 @@
+.header {
+    background-color: #fff;
+    border-top: 1px solid var(--color-9);
+    bottom: 0;
+    display: flex;
+    font-size: 10px;
+    height: var(--header-height);
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    padding: 16px var(--container_padding);
+    right: 0;
+    top: auto;
+    z-index: 5;
+    @media(min-width: 375px) {
+        font-size: var(--smallest-font-size);
+    }
+    @media(min-width: 410px) {
+        font-size: var(--smaller-font-size);
+    }
+
+    &__link {
+        align-items: center;
+        color: var(--color-6);
+        display: flex;
+        font-weight: var(--bigger-font-weight);
+        flex-direction: column;
+        text-decoration: none;
+
+        &.is-active {
+            color: var(--color-1);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

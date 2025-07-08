@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="default-theme" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>BotShop</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <a class="header__link is-active" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#home_icon" />
+            </svg>
+            <span>Каталог</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#search_icon" />
+            </svg>
+            <span>Поиск</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#heart_icon" />
+            </svg>
+            <span>Избранное</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#cart_icon" />
+            </svg>
+            <span>Корзина</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#user_icon" />
+            </svg>
+            <span>Аккаунт</span>
+        </a>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <div class="catalog-top-block">
+                <div class="catalog-search-block">
+                    <form class="search-form" action="">
+                        <input class="input" type="text" placeholder="Поиск">
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <button class="js-filter-opener button button--primary button--square button--h_54" type="button" title="Фильтр">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#filter_icon" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="buttons-group">
+                    <a class="buttons-group__item is-active" href="javascript:void(0)">Все</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Футболки</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Шорты</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Брюки</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Джинсы</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Худи</a>
+                    <a class="buttons-group__item" href="javascript:void(0)">Лонгсливы</a>
+                </div>
+            </div>
+
+            <div class="section-list">
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite is-active" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_filled_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Very Regular Fit Slogan Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190</div>
+                </div>
+
+                <div class="card">
+                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+                    <div class="card__image">
+                        <img src="images/content/img.jpg" srcset="images/content/img@2x.jpg 2x" alt="">
+                    </div>
+                    <a class="card__title" href="#">Regular Fit Slogan</a>
+                    <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    
+    </footer>
+
+
+    <div id="request" class="request-popup">
+        <div class="request-popup__inner">
+            <div class="request-form">
+                <div class="request-form__left">
+                    <h2>Готовы создать свою<br> игру?</h2>
+                </div>
+    
+                <div class="request-form__right">
+                    <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+    
+                    <form class="request-form__form" action="">
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Имя" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Телефон" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                            </div>
+                        </div>
+    
+                        <button class="request-form__submit button button--light button--h_56" type="submit">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#doc_icon" />
+                            </svg>
+                            <span>Отправить заявку</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

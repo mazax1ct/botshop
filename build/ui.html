@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="default-theme" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <a class="header__link is-active" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#home_icon" />
+            </svg>
+            <span>Каталог</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#search_icon" />
+            </svg>
+            <span>Поиск</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#heart_icon" />
+            </svg>
+            <span>Избранное</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#cart_icon" />
+            </svg>
+            <span>Корзина</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#user_icon" />
+            </svg>
+            <span>Аккаунт</span>
+        </a>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <h1>Заголовок H1</h1>
+
+            <h2>Заголовок H2</h2>
+
+            <h3>Заголовок H3</h3>
+
+            <p>Являясь всего лишь частью общей картины, некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Современные
+                технологии достигли такого уровня, что убеждённость некоторых оппонентов представляет собой интересный эксперимент проверки инновационных методов управления процессами! Безусловно, консультация с широким активом предполагает
+                независимые способы реализации глубокомысленных рассуждений.</p>
+
+            <button class="button button--primary button--h_54" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <button class="button button--primary button--h_54" disabled type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <br><br>
+
+            <button class="button button--primary button--h_54 button--wide" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <br><br>
+
+            <button class="button button--secondary button--h_54" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <button class="button button--secondary button--h_54" disabled type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <br><br>
+
+            <button class="button button--secondary button--h_54 button--wide" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#bag_icon" />
+                </svg>
+                <span>В корзину</span>
+            </button>
+
+            <br><br>
+
+            <label class="input-group">
+                <span class="input-group__label">Фамилия</span>
+                <input class="input" type="text" placeholder="Например: Иванов">
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Фамилия</span>
+                <input class="input" type="text" placeholder="Например: Иванов" disabled>
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Фамилия</span>
+                <input class="input valid" type="text" placeholder="Например: Иванов" value="Иванов">
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Фамилия</span>
+                <input class="input error" type="text" placeholder="Например: Иванов" value="Иванов">
+                <span class="input-group__error">Не заполнено</span>
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Сообщение</span>
+                <textarea class="textarea" placeholder="Ваше сообщение"></textarea>
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Сообщение</span>
+                <textarea class="textarea" placeholder="Ваше сообщение" disabled></textarea>
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Сообщение</span>
+                <textarea class="textarea valid" placeholder="Ваше сообщение"></textarea>
+            </label>
+
+            <label class="input-group">
+                <span class="input-group__label">Сообщение</span>
+                <textarea class="textarea error" placeholder="Ваше сообщение"></textarea>
+                <span class="input-group__error">Не заполнено</span>
+            </label>
+
+            <div class="input-group">
+                <div class="input-group__label">Выберите вариант:</div>
+                <select id="sel" class="select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group__label">Выберите вариант:</div>
+                <select id="sel" class="select" disabled>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group__label">Выберите вариант:</div>
+                <select id="sel" class="select error">
+                    <option value="0"></option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+                <span class="input-group__error">Не выбрано</span>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox" value="1">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Make this as a default address</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox" value="2" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Make this as a default address</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox" value="3" disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Make this as a default address</span>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox" value="4" checked disabled>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">Make this as a default address</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="radio" value="1">
+                <span class="radio__icon"></span>
+                <span class="radio__text">Make this as a default address</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="radio" value="2" checked>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Make this as a default address</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="radio" value="3" disabled>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Make this as a default address</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="radio_1" value="4" checked disabled>
+                <span class="radio__icon"></span>
+                <span class="radio__text">Make this as a default address</span>
+            </label>
+
+            <div class="tabs-nav">
+                <div class="tabs-nav__button is-active" type="button">Таб 1</div>
+                <div class="tabs-nav__button" type="button">Таб 2</div>
+                <div class="tabs-nav__button" type="button">Таб 3</div>
+            </div>
+
+            <div class="buttons-group">
+                <button class="buttons-group__item is-active" type="button">Все</button>
+                <button class="buttons-group__item" type="button">Футболки</button>
+                <button class="buttons-group__item" type="button">Шорты</button>
+                <button class="buttons-group__item" type="button">Брюки</button>
+                <button class="buttons-group__item" type="button">Джинсы</button>
+                <button class="buttons-group__item" type="button">Худи</button>
+                <button class="buttons-group__item" type="button">Лонгсливы</button>
+            </div>
+
+            <div class="buttons-group">
+                <a class="buttons-group__item is-active" href="javascript:void(0)">Все</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Футболки</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Шорты</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Брюки</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Джинсы</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Худи</a>
+                <a class="buttons-group__item" href="javascript:void(0)">Лонгсливы</a>
+            </div>
+
+            <div class="buttons-group">
+                <label class="buttons-group__item">
+                    <input type="checkbox" checked>
+                    <span class="buttons-group__item-text">Все</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Футболки</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Шорты</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Брюки</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Джинсы</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Худи</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="checkbox">
+                    <span class="buttons-group__item-text">Лонгсливы</span>
+                </label>
+            </div>
+
+            <div class="buttons-group">
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="1" checked>
+                    <span class="buttons-group__item-text">Все</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="2">
+                    <span class="buttons-group__item-text">Футболки</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="3">
+                    <span class="buttons-group__item-text">Шорты</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="4">
+                    <span class="buttons-group__item-text">Брюки</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="5">
+                    <span class="buttons-group__item-text">Джинсы</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="6">
+                    <span class="buttons-group__item-text">Худи</span>
+                </label>
+                <label class="buttons-group__item">
+                    <input type="radio" name="bgi" value="7">
+                    <span class="buttons-group__item-text">Лонгсливы</span>
+                </label>
+            </div>
+
+            <div class="accordion">
+                <button class="js-accordion-toggler accordion__toggler" type="button">
+                    <span>Заголовок аккордеона</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_down" />
+                    </svg>
+                </button>
+                <div class="accordion__body">
+                    <p>When you find a product you want to purchase, tap on it to view the product details. Check the price, description, and available options (if applicable), and then tap the "Add to Cart" button. Follow the on-screen instructions
+                        to complete the purchase, including providing shipping details and payment information.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="js-accordion-toggler accordion__toggler" type="button">
+                    <span>What payment methods are accepted?</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_down" />
+                    </svg>
+                </button>
+                <div class="accordion__body">
+                    <p>When you find a product you want to purchase, tap on it to view the product details. Check the price, description, and available options (if applicable), and then tap the "Add to Cart" button. Follow the on-screen instructions
+                        to complete the purchase, including providing shipping details and payment information.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    
+    </footer>
+
+    <div id="request" class="request-popup">
+        <div class="request-popup__inner">
+            <div class="request-form">
+                <div class="request-form__left">
+                    <h2>Готовы создать свою<br> игру?</h2>
+                </div>
+    
+                <div class="request-form__right">
+                    <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+    
+                    <form class="request-form__form" action="">
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Имя" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Телефон" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                            </div>
+                        </div>
+    
+                        <button class="request-form__submit button button--light button--h_56" type="submit">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#doc_icon" />
+                            </svg>
+                            <span>Отправить заявку</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

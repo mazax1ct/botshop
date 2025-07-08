@@ -1,0 +1,82 @@
+.buttons-group {
+    display: flex;
+    gap: 8px;
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+    overflow-x: auto;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+    scrollbar-width: none;
+
+    &:not(:last-child) {
+        margin-bottom: var(--default-vertical-indent);
+    }
+
+    &__item {
+        font-family: var(--default-font);
+        font-size: var(--default-font-size);
+        font-weight: var(--bigger-font-weight);
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    a,
+    button {
+        &.buttons-group__item {
+            @include button-reset;
+            align-items: center;
+            border-radius: var(--default-border-radius);
+            border: 1px solid var(--color-9);
+            background-color: #fff;
+            color: var(--color-1);
+            display: flex;
+            gap: 8px;
+            height: 36px;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+
+            &.is-active {
+                background-color: var(--color-1);
+                border-color: var(--color-1);
+                color: #fff;
+            }
+        }
+    }
+
+    label {
+        input {
+            position: absolute;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            width: 1px;
+
+            &:checked ~ .buttons-group__item-text {
+                background-color: var(--color-1);
+                border-color: var(--color-1);
+                color: #fff;
+            }
+        }
+
+        .buttons-group__item-text {
+            align-items: center;
+            border-radius: var(--default-border-radius);
+            border: 1px solid var(--color-9);
+            background-color: #fff;
+            color: var(--color-1);
+            display: flex;
+            gap: 8px;
+            height: 36px;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

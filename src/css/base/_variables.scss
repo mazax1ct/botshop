@@ -1,0 +1,58 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1280px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --default-font: "Roboto", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --success: #0C9409;
+    --error: #ED1010;
+    --default-font-size: 16px;
+    --smaller-font-size: 14px;
+    --smallest-font-size: 12px;
+    --default-font-weight: 400;
+    --bigger-font-weight: 500;
+    --biggest-font-weight: 600;
+    --container_padding: 24px;
+    --default-vertical-indent: 16px;
+    --default-border-radius: 10px;
+    --header-height: 90px;
+}
+
+.default-theme {
+    --color-1: #1A1A1A;
+    --color-2: #333333;
+    --color-3: #4D4D4D;
+    --color-4: #666666;
+    --color-5: #808080;
+    --color-6: #999999;
+    --color-7: #B3B3B3;
+    --color-8: #CCCCCC;
+    --color-9: #E6E6E6;
+}
+
+.theme-1 {
+    --color-1: #1A1A1A;
+    --color-2: #333333;
+    --color-3: #4D4D4D;
+    --color-4: #666666;
+    --color-5: #808080;
+    --color-6: #999999;
+    --color-7: #B3B3B3;
+    --color-8: #CCCCCC;
+    --color-9: #E6E6E6;
+}
+
+.theme-2 {
+    --color-1: #1A1A1A;
+    --color-2: #333333;
+    --color-3: #4D4D4D;
+    --color-4: #666666;
+    --color-5: #808080;
+    --color-6: #999999;
+    --color-7: #B3B3B3;
+    --color-8: #CCCCCC;
+    --color-9: #E6E6E6;
+}
