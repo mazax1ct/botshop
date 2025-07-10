@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="default-theme" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>BotShop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <a class="header__link is-active" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#home_icon" />
+            </svg>
+            <span>Каталог</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#search_icon" />
+            </svg>
+            <span>Поиск</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#heart_icon" />
+            </svg>
+            <span>Избранное</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#cart_icon" />
+            </svg>
+            <span>Корзина</span>
+        </a>
+    
+        <a class="header__link" href="#">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#user_icon" />
+            </svg>
+            <span>Аккаунт</span>
+        </a>
+    </header>
+
+    <main class="page__content">
+        <div class="container d-flex flex-column">
+            <style>
+                .header {
+                    display: none
+                }
+            </style>
+
+            <div class="detail">
+                <div class="detail__images">
+                    <button class="detail__favorite" type="button" title="Добавить в избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#heart_icon" />
+                        </svg>
+                    </button>
+
+                    <div class="js-detail-images swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/content/img_4.jpg" srcset="images/content/img_4@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/content/img_4.jpg" srcset="images/content/img_4@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/content/img_4.jpg" srcset="images/content/img_4@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <h1>Regular Fit Slogan</h1>
+
+                <p>The name says it all, the right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.</p>
+
+                <h2>Выбрать размер</h2>
+
+                <div class="radios-group">
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="1" tabindex="-1" inert checked>
+                        <span class="radios-group__item-text">S</span>
+                    </label>
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="2" tabindex="-1" inert>
+                        <span class="radios-group__item-text">M</span>
+                    </label>
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="3" tabindex="-1" inert>
+                        <span class="radios-group__item-text">L</span>
+                    </label>
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="4" tabindex="-1" inert>
+                        <span class="radios-group__item-text">XL</span>
+                    </label>
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="5" tabindex="-1" inert>
+                        <span class="radios-group__item-text">2XL</span>
+                    </label>
+                    <label class="radios-group__item">
+                        <input type="radio" name="size" value="6" tabindex="-1" inert>
+                        <span class="radios-group__item-text">3XL</span>
+                    </label>
+                </div>
+
+                <h2>Выбрать цвет</h2>
+
+                <div class="radios-group">
+                    <label class="radios-group__item" title="Синий">
+                        <input type="radio" name="color" value="1" tabindex="-1" inert checked>
+                        <span class="radios-group__item-text radios-group__item-text--round">
+                            <img src="images/content/img_5.jpg" alt="Синий">
+                        </span>
+                    </label>
+                    <label class="radios-group__item" title="Красный">
+                        <input type="radio" name="color" value="2" tabindex="-1" inert>
+                        <span class="radios-group__item-text radios-group__item-text--round">
+                            <img src="images/content/img_6.jpg" alt="Красный">
+                        </span>
+                    </label>
+                    <label class="radios-group__item" title="Зеленый">
+                        <input type="radio" name="color" value="3" tabindex="-1" inert>
+                        <span class="radios-group__item-text radios-group__item-text--round">
+                            <img src="images/content/img_7.jpg" alt="Зеленый">
+                        </span>
+                    </label>
+                </div>
+
+                <div class="detail__bottom">
+                    <div class="detail__price-block">
+                        <p class="detail__price-title">Цена</p>
+                        <p class="detail__price">$ 1,190 <span class="detail__discount">-52%</span></p>
+                    </div>
+
+                    <a class="js-popover-opener button button--primary button--h_54" href="#" data-popover="add_cart">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#bag_icon" />
+                        </svg>
+                        <span>В корзину</span>
+                    </a>
+                </div>
+
+                <div id="add_cart" class="popover">
+                    <div class="js-popover-closer popover__shade"></div>
+
+                    <div class="popover__body popover__body--popup">
+                        <div class="popover-message">
+                            <img src="images/content/success.svg" alt="">
+
+                            <h2>Успех!</h2>
+
+                            <p>Товар добавлен в корзину.</p>
+                        </div>
+
+                        <button class="js-popover-closer button button--primary button--h_54 button--wide" type="button">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    
+    </footer>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+
+</html>

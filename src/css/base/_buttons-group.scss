@@ -16,6 +16,7 @@
         font-family: var(--default-font);
         font-size: var(--default-font-size);
         font-weight: var(--bigger-font-weight);
+        white-space: nowrap;
 
         svg {
             fill: currentColor;
@@ -56,12 +57,31 @@
             height: 1px;
             overflow: hidden;
             clip: rect(0 0 0 0);
+            outline: none;
             width: 1px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:checked {
+                outline: none;
+            }
 
             &:checked ~ .buttons-group__item-text {
                 background-color: var(--color-1);
                 border-color: var(--color-1);
                 color: #fff;
+            }
+
+            &:disabled ~ .buttons-group__item-text {
+                background-color: var(--color-8);
+                border-color: transparent;
+                color: #fff;
+            }
+
+            &:not(:disabled) ~ .buttons-group__item-text {
+                cursor: pointer;
             }
         }
 

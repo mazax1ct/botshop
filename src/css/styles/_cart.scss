@@ -1,0 +1,107 @@
+.cart-list {
+    margin-bottom: 24px;
+}
+
+.cart-item {
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--color-9);
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+
+    &:not(:last-child) {
+        margin-bottom: var(--default-vertical-indent);
+    }
+
+    &__image {
+        align-self: flex-start;
+        min-width: 80px;
+        width: 80px;
+
+        img {
+            border-radius: 4px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__delete {
+        @include active-area;
+        @include button-reset;
+        height: 16px;
+        left: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 16px;
+        z-index: 1;
+
+        svg {
+            fill: var(--error);
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__title {
+        color: var(--color-1);
+        font-size: var(--smaller-font-size);
+        font-weight: var(--biggest-font-weight);
+        margin-bottom: 0;
+        padding-right: 24px;
+    }
+
+    &__prop {
+        color: var(--color-5);
+        font-size: var(--smallest-font-size);
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    &__price {
+        color: var(--color-1);
+        font-size: var(--smaller-font-size);
+        font-weight: var(--biggest-font-weight);
+    }
+
+    &__discount {
+        color: var(--error);
+    }
+}
+
+.cart-results {
+    &:not(:last-child) {
+        margin-bottom: 54px;
+    }
+}
+
+.cart-result {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+
+    span {
+        &:nth-child(2) {
+            color: var(--color-1);
+            font-weight: var(--bigger-font-weight);
+        }
+    }
+
+    b {
+        color: var(--color-1);
+        font-weight: var(--biggest-font-weight);
+    }
+}

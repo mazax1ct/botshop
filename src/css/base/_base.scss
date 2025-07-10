@@ -35,14 +35,26 @@ html {
 
     &__content {
         flex: 1 0 auto;
-        padding-top: var(--default-vertical-indent);
+        //padding-top: var(--default-vertical-indent);
         padding-bottom: calc(var(--default-vertical-indent) + var(--header-height));
+
+        & > .container {
+            min-height: 100%;
+        }
     }
 }
 
 .container {
     padding-left: var(--container_padding);
     padding-right: var(--container_padding);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 h1,
@@ -96,6 +108,10 @@ svg {
     outline: none;
 }
 
+input[type="radio"]:focus {
+    outline: none;
+}
+
 button,
 input,
 textarea {
@@ -110,6 +126,8 @@ hr {
     color: var(--color-9);
     background-color: var(--color-9);
     height: 1px;
+    margin-top: var(--default-vertical-indent);
+    margin-bottom: var(--default-vertical-indent);
 }
 
 p {

@@ -7,7 +7,7 @@
 
     <title>BotShop</title>
 
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
 
     //= template/common/styles.html
@@ -17,19 +17,19 @@
     //= template/common/header.html
 
     <main class="page__content">
-        <div class="container">
+        <div class="container d-flex flex-column">
             <div class="catalog-top-block">
                 <div class="catalog-search-block">
                     <form class="search-form" action="">
-                        <input class="input" type="text" placeholder="Поиск">
-                        <button class="search-form__submit" type="submit" title="Искать">
+                        <input class="input" type="text" placeholder="Поиск товаров">
+                        <button class="search-form__button search-form__button--submit" type="submit" title="Искать">
                             <svg aria-hidden="true">
                                 <use xlink:href="images/sprite.svg#search_icon" />
                             </svg>
                         </button>
                     </form>
 
-                    <button class="js-filter-opener button button--primary button--square button--h_54" type="button" title="Фильтр">
+                    <button class="js-popover-opener button button--primary button--square button--h_54" type="button" title="Фильтр" data-popover="filter">
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#filter_icon" />
                         </svg>
@@ -204,15 +204,163 @@
                     <div class="card__price">$ 1,190 <span class="card__discount">-52%</span></div>
                 </div>
             </div>
+
+            <div id="filter" class="popover">
+                <div class="js-popover-closer popover__shade"></div>
+                <div class="popover__body">
+                    <button class="js-popover-closer popover__closer" type="button"></button>
+
+                    <div class="popover__body-inner">
+                        <form class="filter">
+                            <div class="filter__section">
+                                <h3>Сортировка</h3>
+
+                                <div class="buttons-group">
+                                    <a class="buttons-group__item is-active" href="javascript:void(0)">По умолчанию</a>
+                                    <a class="buttons-group__item" href="javascript:void(0)">По новизне</a>
+                                    <a class="buttons-group__item" href="javascript:void(0)">По возрастанию цены</a>
+                                    <a class="buttons-group__item" href="javascript:void(0)">По убыванию цены</a>
+                                </div>
+                            </div>
+
+                            <div class="filter__section">
+                                <h3>Бренд</h3>
+
+                                <div class="filter__section-list">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">ATELIER</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">ADD</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">AFTER LABEL</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">AHURA</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">AI RIDERS ON THE STORM</span>
+                                    </label>
+
+                                    <div class="filter__section-cut">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">ALETTA</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">ANDREA MONTELPARE</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">ANTONY MORATO</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Antonio Juan</span>
+                                        </label>
+                                    </div>
+
+                                    <button class="js-filter-section-cut filter__section-cut-toggler" type="button" data-text="Скрыть">Показать все</button>
+                                </div>
+                            </div>
+
+                            <div class="filter__section">
+                                <h3>Размер</h3>
+
+                                <div class="filter__section-list">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">S</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">M</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">L</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">XL</span>
+                                    </label>
+
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">XXL</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="filter__section">
+                                <h3>Цена</h3>
+
+                                <div class="price-inputs">
+                                    <div class="price-inputs__item">
+                                        <span class="price-inputs__item-title">от</span>
+
+                                        <label class="input-group">
+                                            <input id="min" class="input" type="text" placeholder="25000" value="25000">
+                                        </label>
+                                    </div>
+
+                                    <div class="price-inputs__item">
+                                        <span class="price-inputs__item-title">до</span>
+
+                                        <label class="input-group">
+                                            <input id="max" class="input" type="text" placeholder="75000" value="75000">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <input class="js-price-slider" type="text" name="price_range" value="" />
+                            </div>
+
+                            <div class="filter__button-block">
+                                <button class="button button--secondary button--h_54 " type="reset">
+                                    Сбросить
+                                </button>
+
+                                <button class="button button--primary button--h_54 button--wide" type="submit">Применить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     //= template/common/footer.html
 
-
     //= template/common/popups.html
 
     //= template/common/scripts.html
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/catalog.js"></script>
 </body>
 
 </html>

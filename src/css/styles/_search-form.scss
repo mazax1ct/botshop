@@ -6,22 +6,89 @@
         padding-left: 56px;
     }
 
-    &__submit {
+    &__button {
         @include button-reset;
         align-items: center;
         display: flex;
         height: 54px;
         justify-content: center;
-        left: 0;
         position: absolute;
         top: 0;
         width: 54px;
         z-index: 1;
 
+        &--submit {
+            left: 0;
+        }
+
+        &--clear {
+            display: none;
+            left: auto;
+            right: 0;
+
+            &.is-active {
+                display: flex;
+            }
+
+            & + .input {
+                padding-right: 56px;
+            }
+        }
+
         svg {
             fill: var(--color-7);
             height: 24px;
             width: 24px;
+        }
+    }
+
+    &__dropdown {
+        background-color: #fff;
+        box-shadow: 0 8px 10px rgba(82, 82, 82, 0.25);
+        border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+        display: none;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        /*padding-top: var(--default-vertical-indent);
+        padding-bottom: var(--default-vertical-indent);*/
+        top: 100%;
+        width: 100%;
+        z-index: 1;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    &__dropdown-list {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    &__suggest {
+        @include button-reset;
+        align-items: center;
+        color: var(--color-1);
+        display: flex;
+        font-size: var(--smaller-font-size);
+        font-weight: var(--bigger-font-weight);
+        gap: 16px;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 12px var(--default-vertical-indent);
+        text-align: left;
+        width: 100%;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-9);
+        }
+
+        svg {
+            height: 16px;
+            min-width: 16px;
+            transform: rotate(-45deg);
+            width: 16px;
         }
     }
 }

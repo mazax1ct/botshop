@@ -1,6 +1,16 @@
 .catalog-top-block {
-    &:not(:last-child) {
-        margin-bottom: 24px;
+    background-color: #fff;
+    left: 0;
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+    position: sticky;
+    padding: 16px var(--container_padding) 24px;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    & + .section-list {
+        padding-top: 0;
     }
 }
 
@@ -17,10 +27,83 @@
     }
 }
 
+.filter {
+    padding-bottom: 54px;
+
+    &__section {
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-9);
+            margin-bottom: var(--default-vertical-indent);
+            padding-bottom: var(--default-vertical-indent);
+        }
+
+        h3 {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__section-list {
+        .checkbox {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__section-cut {
+        display: none;
+        margin-bottom: 12px;
+    }
+
+    &__section-cut-toggler {
+        @include active-area;
+        @include button-reset;
+        color: var(--color-1);
+        position: relative;
+        text-decoration: underline;
+    }
+
+    &__button-block {
+        background-color: #fff;
+        bottom: 0;
+        display: flex;
+        gap: 16px;
+        left: 0;
+        position: fixed;
+        padding: var(--default-vertical-indent) var(--container_padding) 30px;
+        right: 0;
+        top: auto;
+        z-index: 2;
+    }
+}
+
+.price-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    &__item {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+    }
+
+    &__item-title {
+        font-size: 18px;
+    }
+
+    .input-group__input {
+        font-size: 18px;
+        height: 44px;
+        padding-top: 10px;
+    }
+}
+
 .section-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 20px;
+    padding-top: var(--default-vertical-indent);
 }
 
 .card {

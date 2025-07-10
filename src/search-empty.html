@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="default-theme" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>BotShop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container d-flex flex-column">
+            <div class="catalog-top-block">
+                <form class="search-form" action="">
+                    <button class="js-search-clear search-form__button search-form__button--clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+
+                    <input class="input" type="text" placeholder="Поиск">
+
+                    <button class="search-form__button search-form__button--submit" type="submit" title="Искать">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search_icon" />
+                        </svg>
+                    </button>
+
+                    <div class="search-form__dropdown">
+                        <div class="search-form__dropdown-list">
+                            <button class="search-form__suggest" type="button">
+                                <span>Самый длинный запрос для поиска товара для того чтобы проверить вёрстку</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Кепка</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Рубашка</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Поло</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Самый длинный запрос для поиска товара для того чтобы проверить вёрстку</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Кепка</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Рубашка</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+
+                            <button class="search-form__suggest" type="button">
+                                <span>Поло</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="empty-list-message">
+                <img src="images/content/search-empty.svg" alt="">
+                <h2>Ничего не найдено!</h2>
+                <p>Попробуйте по-другому<br> сформулировать поисковый запрос.</p>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
