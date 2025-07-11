@@ -1,14 +1,11 @@
-.cart-list {
-    margin-bottom: 24px;
-    //padding-top: var(--default-vertical-indent);
-}
-
-.cart-item {
+.order {
     border-radius: var(--default-border-radius);
     border: 1px solid var(--color-9);
     display: flex;
     gap: 16px;
     padding: 16px;
+    position: relative;
+    z-index: 1;
 
     &:not(:last-child) {
         margin-bottom: var(--default-vertical-indent);
@@ -28,34 +25,37 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        position: relative;
-        z-index: 1;
-    }
-
-    &__delete {
-        @include active-area;
-        @include button-reset;
-        height: 16px;
-        left: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 16px;
-        z-index: 1;
-
-        svg {
-            fill: var(--error);
-            height: 16px;
-            width: 16px;
-        }
     }
 
     &__title {
+        align-items: flex-start;
         color: var(--color-1);
+        display: flex;
         font-size: var(--smaller-font-size);
         font-weight: var(--biggest-font-weight);
+        gap: 16px;
+        justify-content: space-between;
         margin-bottom: 0;
-        padding-right: 24px;
+        word-break: break-all;
+    }
+
+    &__status {
+        background-color: var(--color-9);
+        border-radius: 6px;
+        font-size: 10px;
+        font-weight: var(--default-font-weight);
+        padding: 3px 8px;
+        white-space: nowrap;
+
+        &--complete {
+            background-color: rgba(#0C9409, 0.1);
+            color: var(--success);
+        }
+
+        &--canceled {
+            background-color: rgba(#ED1010, 0.1);
+            color: var(--error);
+        }
     }
 
     &__prop {
@@ -69,6 +69,14 @@
         gap: 16px;
         justify-content: space-between;
         margin-top: auto;
+
+        .button {
+            @include active-area;
+
+            &::after {
+                height: 100%;
+            }
+        }
     }
 
     &__price {
@@ -79,30 +87,5 @@
 
     &__discount {
         color: var(--error);
-    }
-}
-
-.cart-results {
-    &:not(:last-child) {
-        margin-bottom: 54px;
-    }
-}
-
-.cart-result {
-    align-items: center;
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-
-    span {
-        &:nth-child(2) {
-            color: var(--color-1);
-            font-weight: var(--bigger-font-weight);
-        }
-    }
-
-    b {
-        color: var(--color-1);
-        font-weight: var(--biggest-font-weight);
     }
 }

@@ -3,15 +3,12 @@
     left: 0;
     margin-left: calc(0.01px - var(--container_padding));
     margin-right: calc(0.01px - var(--container_padding));
+    margin-top: -16px;
     position: sticky;
     padding: 16px var(--container_padding) 24px;
     right: 0;
     top: 0;
     z-index: 2;
-
-    & + .section-list {
-        padding-top: 0;
-    }
 }
 
 .catalog-search-block {
@@ -24,6 +21,7 @@
 
     .search-form {
         flex-grow: 1;
+        margin-bottom: 0;
     }
 }
 
@@ -103,7 +101,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 20px;
-    padding-top: var(--default-vertical-indent);
+    //padding-top: var(--default-vertical-indent);
 }
 
 .card {

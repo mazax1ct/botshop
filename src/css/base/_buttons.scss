@@ -33,6 +33,16 @@
             background-color: transparent;
             color: var(--color-1);
         }
+
+        &.button--success {
+            background-color: var(--success);
+            color: #fff;
+        }
+
+        &.button--error {
+            background-color: var(--error);
+            color: #fff;
+        }
     }
 
     &--h_54 {
@@ -54,6 +64,8 @@
         border-radius: 6px;
         font-size: 10px;
         height: 30px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     &--wide {
