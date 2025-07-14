@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  $('html').addClass('theme-2');
 });
 
 $(document).on('click', '.js-accordion-toggler', function() {

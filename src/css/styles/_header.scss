@@ -25,10 +25,12 @@
         display: flex;
         font-weight: var(--bigger-font-weight);
         flex-direction: column;
+        position: relative;
         text-decoration: none;
+        z-index: 1;
 
         &.is-active {
-            color: var(--color-1);
+            color: var(--accent);
         }
 
         svg {
@@ -36,5 +38,21 @@
             height: 24px;
             width: 24px;
         }
+    }
+
+    &__link-qnt {
+        background-color: var(--accent);
+        border-radius: 8px;
+        color: #fff;
+        font-size: 10px;
+        height: 16px;
+        left: auto;
+        min-width: 16px;
+        padding-left: 2px;
+        padding-right: 2px;
+        position: absolute;
+        right: 8px;
+        top: 0;
+        z-index: 1;
     }
 }

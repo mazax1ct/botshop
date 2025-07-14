@@ -32,14 +32,14 @@
             }
 
             &:checked ~ .radios-group__item-text {
-                background-color: var(--color-1);
-                border-color: var(--color-1);
+                background-color: var(--accent);
+                border-color: var(--accent);
                 color: #fff;
             }
 
             &:checked ~ .radios-group__item-text--round {
                 background-color: #fff;
-                border-color: var(--color-1);
+                border-color: var(--accent);
             }
 
             &:disabled ~ .radios-group__item-text {

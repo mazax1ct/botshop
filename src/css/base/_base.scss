@@ -57,6 +57,31 @@ html {
     flex-direction: column;
 }
 
+.title-block {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: var(--default-vertical-indent);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    a {
+        @include active-area;
+        font-size: var(--smaller-font-size);
+        position: relative;
+        z-index: 1;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -90,7 +115,7 @@ h3 {
 }
 
 a {
-    color: var(--color-1);
+    color: var(--accent);
 }
 
 img {
@@ -271,4 +296,36 @@ ul {
 
 .text-right {
     text-align: right;
+}
+
+.responsive-table {
+    overflow-x: auto;
+
+    &:not(:last-child) {
+        margin-bottom: var(--default-vertical-indent);
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    font-size: var(--smaller-font-size);
+    text-align: left;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: var(--default-vertical-indent);
+    }
+
+    th {
+        color: var(--accent);
+        font-weight: var(--biggest-font-weight);
+    }
+
+    td,
+    th {
+        border: 1px solid var(--color-1);
+        padding: 5px;
+    }
 }

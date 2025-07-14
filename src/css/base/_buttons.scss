@@ -23,8 +23,8 @@
 
     &:not(:disabled) {
         &.button--primary {
-            background-color: var(--color-1);
-            border-color: var(--color-1);
+            background-color: var(--accent);
+            border-color: var(--accent);
             color: #fff;
         }
 
@@ -36,11 +36,13 @@
 
         &.button--success {
             background-color: var(--success);
+            border-color: var(--success);
             color: #fff;
         }
 
         &.button--error {
             background-color: var(--error);
+            border-color: var(--error);
             color: #fff;
         }
     }

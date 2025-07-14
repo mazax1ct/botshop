@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="default-theme" lang="ru">
+<html class="" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,7 @@
                 <use xlink:href="images/sprite.svg#heart_icon" />
             </svg>
             <span>Избранное</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -44,6 +45,7 @@
                 <use xlink:href="images/sprite.svg#cart_icon" />
             </svg>
             <span>Корзина</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -91,7 +93,11 @@
 
                 <p>The name says it all, the right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.</p>
 
-                <h2>Выбрать размер</h2>
+                <div class="title-block">
+                    <h2>Выбрать размер</h2>
+
+                    <a class="js-popover-opener" href="javascript:void(0)" data-popover="sizes">Таблица размеров</a>
+                </div>
 
                 <div class="radios-group">
                     <label class="radios-group__item">
@@ -170,6 +176,137 @@
                         </div>
 
                         <button class="js-popover-closer button button--primary button--h_54 button--wide" type="button">Закрыть</button>
+                    </div>
+                </div>
+
+                <div id="sizes" class="popover">
+                    <div class="js-popover-closer popover__shade"></div>
+
+                    <div class="popover__body">
+                        <button class="js-popover-closer popover__closer" type="button"></button>
+
+                        <div class="popover__body-inner">
+                            <h2>Таблица размеров</h2>
+
+                            <div class="responsive-table">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th>INT</th>
+                                            <th>RU</th>
+                                            <th>Обхват груди</th>
+                                            <th>Обхват талии</th>
+                                            <th>Обхват бедер</th>
+                                            <th>Рост</th>
+                                        </tr>
+                                        <tr>
+                                            <td>S</td>
+                                            <td>46</td>
+                                            <td>92</td>
+                                            <td>76</td>
+                                            <td>96</td>
+                                            <td>170-176</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>48</td>
+                                            <td>96</td>
+                                            <td>82</td>
+                                            <td>100</td>
+                                            <td>170-176</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>50</td>
+                                            <td>100</td>
+                                            <td>86</td>
+                                            <td>104</td>
+                                            <td>170-176</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XL</td>
+                                            <td>52</td>
+                                            <td>104</td>
+                                            <td>90</td>
+                                            <td>108</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2XL</td>
+                                            <td>54</td>
+                                            <td>108</td>
+                                            <td>94</td>
+                                            <td>112</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3XL</td>
+                                            <td>56</td>
+                                            <td>112</td>
+                                            <td>98</td>
+                                            <td>116</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4XL</td>
+                                            <td>58</td>
+                                            <td>116</td>
+                                            <td>102</td>
+                                            <td>120</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5XL</td>
+                                            <td>60</td>
+                                            <td>120</td>
+                                            <td>104</td>
+                                            <td>124</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6XL</td>
+                                            <td>62</td>
+                                            <td>124</td>
+                                            <td>112</td>
+                                            <td>128</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7XL</td>
+                                            <td>64</td>
+                                            <td>128</td>
+                                            <td>116</td>
+                                            <td>132</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8XL</td>
+                                            <td>66</td>
+                                            <td>132</td>
+                                            <td>120</td>
+                                            <td>136</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9XL</td>
+                                            <td>68</td>
+                                            <td>136</td>
+                                            <td>124</td>
+                                            <td>140</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10XL</td>
+                                            <td>70</td>
+                                            <td>140</td>
+                                            <td>128</td>
+                                            <td>144</td>
+                                            <td>176-182</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
