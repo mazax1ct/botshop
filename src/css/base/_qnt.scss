@@ -1,21 +1,35 @@
 .qnt {
+    --btn_size: 24px;
+    --svg_size: 14px;
+    --border_radius: 4px;
+    --font_size: var(--smaller-font-size);
     display: flex;
+
+    &--big {
+        --btn_size: 48px;
+        --svg_size: 20px;
+        --border_radius: var(--default-border-radius);
+        --font_size: 20px;
+    }
 
     &__button {
         @include active-area;
         @include button-reset;
         align-items: center;
         border: 1px solid var(--color-8);
-        border-radius: 4px;
+        border-radius: var(--border_radius);
         display: flex;
-        height: 24px;
+        height: var(--btn_size);
         justify-content: center;
-        width: 24px;
+        min-width: var(--btn_size);
+        position: relative;
+        width: var(--btn_size);
+        z-index: 1;
 
         svg {
             fill: var(--color-1);
-            height: 14px;
-            width: 14px;
+            height: var(--svg_size);
+            width: var(--svg_size);
         }
     }
 
@@ -25,10 +39,10 @@
         box-shadow: none;
         caret-color: transparent;
         color: var(--color-1);
-        font-size: var(--smaller-font-size);
-        height: 24px;
+        font-size: var(--font_size);
+        height: var(--btn_size);
         padding: 0;
-        width: 24px;
+        width: var(--btn_size);
         text-align: center;
     }
 }

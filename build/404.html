@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="default-theme" lang="ru">
+<html class="" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,7 @@
                 <use xlink:href="images/sprite.svg#heart_icon" />
             </svg>
             <span>Избранное</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -44,6 +45,7 @@
                 <use xlink:href="images/sprite.svg#cart_icon" />
             </svg>
             <span>Корзина</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -55,28 +57,10 @@
     </header>
 
     <main class="page__content">
-        <div class="container">
-            <div class="links-list">
-                <a class="link" href="#" target="_blank">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#wa_icon" />
-                    </svg>
-                    <span>Whats App</span>
-                </a>
-
-                <a class="link" href="#" target="_blank">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#site_icon" />
-                    </svg>
-                    <span>Наш сайт</span>
-                </a>
-
-                <a class="link" href="#" target="_blank">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#inst_icon" />
-                    </svg>
-                    <span>Instagram</span>
-                </a>
+        <div class="container d-flex flex-column">
+            <div class="empty-list-message">
+                <h1 style="font-weight: 700; font-size: 60px">404</h1>
+                <p>Что-то пошло не так!<br> Запрашиваемая страница не найдена!<br> Начните поиск с <a href="#">главной страницы</a>.</p>
             </div>
         </div>
     </main>

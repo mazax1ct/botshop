@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('html').addClass('theme-2');
+  $('html').addClass('theme-1');
 });
 
 $(document).on('click', '.js-accordion-toggler', function() {
@@ -53,5 +53,19 @@ $(document).on('click', '.js-search-clear', function () {
 $(document).on('click', '.search-form__suggest', function () {
   let text = $(this).find('span').text();
   $('.search-form .input').val(text);
+  return false;
+});
+
+$(document).on('click', '.js-cut-opener', function() {
+  let cut = $(this).attr('data-cut');
+
+  if($(this).hasClass('is-active')) {
+    $('#' + cut).removeClass('is-open');
+    $(this).removeClass('is-active');
+  } else {
+    $('#' + cut).addClass('is-open');
+    $(this).addClass('is-active');
+  }
+
   return false;
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="default-theme" lang="ru">
+<html class="" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,7 @@
                 <use xlink:href="images/sprite.svg#heart_icon" />
             </svg>
             <span>Избранное</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -44,6 +45,7 @@
                 <use xlink:href="images/sprite.svg#cart_icon" />
             </svg>
             <span>Корзина</span>
+            <span class="header__link-qnt">10</span>
         </a>
     
         <a class="header__link" href="#">
@@ -55,11 +57,11 @@
     </header>
 
     <main class="page__content">
-        <div class="container d-flex">
+        <div class="container d-flex flex-column">
             <div class="empty-list-message">
-                <img src="images/content/cart-empty.svg" alt="">
-                <h2>Ваша корзина пуста!</h2>
-                <p>Когда вы добавите товары,<br> они отобразятся здесь.</p>
+                <img src="images/content/orders-empty.svg" alt="">
+                <h2>Заказ №564 оформлен!</h2>
+                <p>Следить за статусом вашего закза вы можете на <a href="#">странице списка заказов</a></p>
             </div>
         </div>
     </main>

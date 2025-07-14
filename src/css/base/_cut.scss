@@ -1,0 +1,47 @@
+.cut {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.5s ease;
+    z-index: 1;
+
+    &.is-open {
+        height: auto;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &::after {
+        background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        bottom: 0;
+        content: '';
+        height: 30px;
+        left: 0;
+        position: absolute;
+        top: auto;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.cut-opener {
+    @include active-area;
+    @include button-reset;
+    height: 24px;
+    min-width: 24px;
+    width: 24px;
+
+    &.is-active {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    svg {
+        fill: var(--color-1);
+        height: 24px;
+        width: 24px;
+    }
+}
