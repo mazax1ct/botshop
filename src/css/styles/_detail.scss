@@ -49,20 +49,19 @@
 
     &__bottom {
         align-items: center;
-        background-color: #fff;
+        /*background-color: #fff;
         border-top: 1px solid var(--color-9);
-        bottom: 0;
+        bottom: 0;*/
         display: flex;
-        height: var(--header-height);
+        /*height: var(--header-height);*/
         gap: 16px;
         justify-content: space-between;
-        left: 0;
+        /*left: 0;
         position: fixed;
         padding: 16px var(--container_padding);
         right: 0;
         top: auto;
-        z-index: 5;
-
+        z-index: 5;*/
         .button {
             flex-grow: 1;
             padding-left: 12px;

@@ -5,6 +5,10 @@
     transition: height 0.5s ease;
     z-index: 1;
 
+    &:not(:last-child) {
+        margin-bottom: var(--default-vertical-indent);
+    }
+
     &.is-open {
         height: auto;
 
