@@ -34,10 +34,18 @@
         }
 
         svg {
+            display: block;
             fill: currentColor;
             height: 24px;
+            margin-left: auto;
+            margin-right: auto;
             width: 24px;
         }
+    }
+
+    &__link-qnt-container {
+        display: block;
+        position: relative;
     }
 
     &__link-qnt {
@@ -51,8 +59,8 @@
         padding-left: 2px;
         padding-right: 2px;
         position: absolute;
-        right: 8px;
-        top: 0;
+        right: -8px;
+        top: -6px;
         z-index: 1;
     }
 }
